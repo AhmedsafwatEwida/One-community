@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/usernameupd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="User Name"
+                android:textColor="#ffffff"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary">
+
+                <EditText
+                    android:id="@+id/usernameeupd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textStyle="normal|bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/ageupd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Age "
+                android:textColor="#ffffff"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:textColorLink="@color/colorPrimary">
+
+                <EditText
+                    android:id="@+id/ageeupd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textStyle="normal|bold" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/Gendreupd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_gendre"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/Nationalityupd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_nationality"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/Studiesupd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_studies"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/Quranhefzupd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_Quraan"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/Sportsupd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_sports"
+                android:spinnerMode="dialog" />
+
+            <Spinner
+                android:id="@+id/Volunteerupd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="@string/spinner_voluntere"
+                android:spinnerMode="dialog" />
+
+            <Button
+                android:id="@+id/updatelocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/borderbotton"
+                android:onClick="startUpdate"
+                android:text="Update Location"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/updatedata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/borderbotton"
+                android:onClick="startUpdatedata"
+                android:text="Update user profile"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/launch_map_upd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/borderbotton"
+                android:onClick="startAnimation"
+                android:text="Loaunch Map"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/guidview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/newuser"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/borderbotton"
+        android:onClick="startAnimation"
+        android:text="new user"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/launch"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/borderbotton"
+        android:onClick="startAnimation"
+        android:text="launch map"
+        android:layout_below="@+id/upduserdata"
+        android:layout_alignLeft="@+id/newuser"
+        android:layout_alignStart="@+id/newuser"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:id="@+id/updloc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/borderbotton"
+        android:onClick="startAnimation"
+        android:text="Update Location"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/upduserdata"
+        android:layout_alignStart="@+id/upduserdata"
+        android:layout_marginTop="17dp" />
+
+    <Button
+        android:id="@+id/upduserdata"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/launch"
+        android:layout_alignStart="@+id/launch"
+        android:layout_below="@+id/updloc"
+        android:layout_marginTop="34dp"
+        android:background="@drawable/borderbotton"
+        android:onClick="startAnimation"
+        android:text="open chat window" />
+</RelativeLayout>

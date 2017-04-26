@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OneCommunity</string>
+    <string name="spinner_gendre">Select Gendre</string>
+    <string name="spinner_sports">Select Sport</string>
+    <string name="spinner_voluntere">Volunteer Work</string>
+    <string name="spinner_studies">Select Studies</string>
+    <string name="spinner_Quraan">Select Quraan Memorization</string>
+    <string name="spinner_nationality">Select Nationality</string>
+</resources>

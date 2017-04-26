@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="User Name"
+                android:textColor="#ffffff"
+                android:textColorLink="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:id="@+id/username">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:id="@+id/usernamee"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textStyle="normal|bold"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Age "
+                android:textColor="#ffffff"
+                android:textColorLink="@color/colorPrimary"
+                android:textColorHighlight="@color/colorPrimary"
+                android:textColorHint="@color/colorPrimary"
+                android:id="@+id/age">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textColorHighlight="@color/colorPrimary"
+                    android:textColorHint="@color/colorPrimary"
+                    android:id="@+id/agee"
+                    android:textStyle="normal|bold"
+                    android:inputType="numberDecimal" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_gendre"
+                android:id="@+id/Gendre" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_nationality"
+                android:id="@+id/Nationality" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_studies"
+                android:id="@+id/Studies" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_Quraan"
+                android:id="@+id/Quranhefz" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_sports"
+                android:id="@+id/Sports" />
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_voluntere"
+                android:id="@+id/Volunteer" />
+
+            <Button
+                android:text="Add User"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:onClick="startAnimation"
+                android:background="@drawable/borderbotton"
+                android:textColor="#ffffff"
+                android:id="@+id/add_user" />
+
+            <Button
+                android:id="@+id/map_user"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@drawable/borderbotton"
+                android:onClick="startAnimation"
+                android:text="Loaunch Map"
+                android:textColor="#ffffff" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
